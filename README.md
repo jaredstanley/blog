@@ -1,4 +1,4 @@
-# blog-test
+# blog
 
 ## Build Setup
 

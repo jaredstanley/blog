@@ -1,6 +1,9 @@
 ---
 title: Canvas Particles
 description: This is a canvas experiment that turned out pretty
+month: 05
+day: 02
+year: 2013
 ---
 This is a canvas experiment that turned out pretty:
 

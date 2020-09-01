@@ -1,42 +1,50 @@
 <template>
-  <div>
-    <section class="hero is-primary has-text-centered">
-      <div class="hero-body">
+  <div id="root">
+    <section id="hero">
         <div class="container">
           <h1 class="title">
-            Tech Blog
+            Jared Stanley
           </h1>
           <h2 class="subtitle">
-            An awesome blog
+            Creative Technologist | UX/Design Manager
           </h2>
+      </div>
+    </section>
+
+    <section id="section">
+      <div class="container">
+        <div class="columns">
+
+            <div v-for="post in posts" :key="post.slug">
+              <nuxt-link :to="post.slug">
+                  
+              <div class="post">  
+                <h3 class="s">
+                  <!-- <nuxt-link :to="'/blog/' + post.slug"> -->
+                  <!-- <nuxt-link :to="/blog/${post.slug}"> -->
+                    {{ post.title }}
+                </h3>
+                <div class="date">
+                  {{ post.month }}/{{ post.day }}/{{ post.year }}
+                </div>
+                <div class="description">
+                  {{ post.description }}
+                </div>
+              </div>
+              </nuxt-link>
+              
+            </div>
+        
+
+            
+
+
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="columns">
-          <div class="column is-three-fifths is-offset-one-fifth">
-            <div v-for="post in posts" :key="post.slug" class="mb-5">
-              <div>
-                <br/>
-                </div>  
-              <h3 class="title is-4">
-                <nuxt-link :to="post.slug">
-                <!-- <nuxt-link :to="'/blog/' + post.slug"> -->
-                <!-- <nuxt-link :to="/blog/${post.slug}"> -->
-                  {{ post.title }}
-                </nuxt-link>
-              </h3>
-              <div>
-                {{ post.description }}
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </section>
+
+    
   </div>
 </template>
 
@@ -50,19 +58,57 @@ export default {
 </script>
 
 <style>
-  section > .section{
-    display:flex;
+  *{
+    padding: 0;
+    margin: 0;
   }
-  section > .container{
+  #root{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #hero, #section{
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1440px;
+  }
+  
+  .container{
+    /* display: flex; */
+    max-width: 80%;
   }
   h1{
-    background: #fe5000;
+    width: 100%;
+    background: #f5d467;
   }
   h3 a {
     color: #053575;
   }
-  h3 a:hover {
-    color: #faf000;
+  div a:hover {
+    color: #066534;
+  }
+  div a {
+     text-decoration: none;
+  }
+  .post{
+   
+    background:ivory;
+    margin: 10px;
+    padding: 10px;
+  }
+  .date{
+    display: inline;
+    font-size: 0.75em;
+    background-color:greenyellow;
+    border-radius: 4px;
+    padding: 2px;
+    
+  }
+  .description{
+    font-size: 0.85em;
   }
 </style>

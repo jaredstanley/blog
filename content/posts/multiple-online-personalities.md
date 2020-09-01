@@ -1,6 +1,9 @@
 ---
 title: Our Multiple Online Personalities
 description: Most all of us are not always the same person.
+month: 05
+day: 12
+year: 2013
 ---
 
 (These are a few posts from my tumblr about the timeline project – moving them over here so they’re all in the same place. Some of these are WIP that never P’ed.)

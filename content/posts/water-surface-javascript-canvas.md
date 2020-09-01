@@ -1,6 +1,9 @@
 ---
 title: water surface in javascript and canvas
 description: We were talking about physics libraries and water and performance at work, I decided to mess around with that.
+month: 05
+day: 15
+year: 2013
 ---
 
 

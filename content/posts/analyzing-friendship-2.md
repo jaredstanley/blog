@@ -1,6 +1,9 @@
 ---
 title: Analyzing a Friendship - Part 2
 description: Using Cold, Clinical Data to Deepen our Relationships
+month: 05
+day: 12
+year: 2013
 ---
 (These are a few posts from my tumblr about the timeline project – moving them over here so they’re all in the same place. Some of these are WIP that never P’ed.)
 

@@ -1,6 +1,9 @@
 ---
 title: Logging Measurable Life Events
 description: When recording measurable experiences in our life, we can categorize events in at least one of three ways
+month: 05
+day: 12
+year: 2013
 ---
 
 (These are a few posts from my tumblr about the timeline project – moving them over here so they’re all in the same place. Some of these are WIP that never P’ed.)

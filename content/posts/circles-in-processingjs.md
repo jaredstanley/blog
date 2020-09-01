@@ -1,6 +1,9 @@
 ---
 title: Circles in processing.js
 description: Here's the code
+month: 02
+day: 04
+year: 2012
 ---
 Here’s the code:
 

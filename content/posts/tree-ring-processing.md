@@ -1,6 +1,9 @@
 ---
 title: tree ring - processing
 description: My wife received this book in the mail
+month: 06
+day: 18
+year: 2012
 ---
 
 My wife received this book in the mail:
