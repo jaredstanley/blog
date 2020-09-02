@@ -6,6 +6,12 @@
           <h1 class="title">
             {{ post.title }}
           </h1>
+          <div class="date">
+            {{ post.month }}/{{ post.day }}/{{ post.year }}
+          </div>
+          <div class="description">
+            {{ post.description }}
+          </div>
           
           <nuxt-content :document="post" />
     
