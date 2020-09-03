@@ -9,9 +9,6 @@
           <div class="date">
             {{ post.month }}/{{ post.day }}/{{ post.year }}
           </div>
-          <div class="description">
-            {{ post.description }}
-          </div>
           
           <nuxt-content :document="post" />
     

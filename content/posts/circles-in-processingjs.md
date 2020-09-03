@@ -5,17 +5,21 @@ month: 02
 day: 04
 year: 2012
 ---
+[Here's a codepen](https://codepen.io/jaredstanley/pen/MWyOjwp)
+
+<br>
+
 Here’s the code:
 
 
-```
-int numberOfPoints = 360;
-float angleIncrement = 360 / numberOfPoints;
-float circleRadius = 200;
-Item[] items;
-int count = 0;
+`
+    int numberOfPoints = 360;
+    float angleIncrement = 360 / numberOfPoints;
+    float circleRadius = 200;
+    Item[] items;
+    int count = 0;
 void setup() {
-background(255);
+    background(255);
 size(700, 700);
 noStroke();
 smooth();
@@ -65,4 +69,6 @@ g = random(100);
 b = random(10);
 }
 }
-```
+`
+
+<br>

@@ -58,75 +58,24 @@ export default {
 </script>
 
 <style>
- @media print {
-  *,
-  *:before,
-  *:after {
-    background: transparent !important;
-    color: #000 !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
 
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
+@import url(http://fonts.googleapis.com/css?family=Arimo:700,700italic);
 
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
 
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: "";
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  thead {
-    display: table-header-group;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  img {
-    max-width: 100% !important;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
+html {
+  font-size: 18px;
+  max-width: 100%;
 }
 
-pre,
-code {
-  font-family: Menlo, Monaco, "Courier New", monospace;
-}
-
-pre {
-  padding: .5rem;
-  line-height: 1.25;
-  overflow-x: scroll;
+body {
+  color: #444;
+  font-family: 'Arimo', sans-serif;
+  font-weight: 300;
+  margin: 0 auto;
+  max-width: 48rem;
+  line-height: 1.45;
+  padding: .25rem;
 }
 
 a,
@@ -140,123 +89,14 @@ a:active {
   color: #2980b9;
 }
 
-.modest-no-decoration {
-  text-decoration: none;
+h2{
+ font-size: 1.25em;
 }
 
-html {
-  font-size: 12px;
-}
-
-@media screen and (min-width: 32rem) and (max-width: 48rem) {
-  html {
-    font-size: 15px;
-  }
-}
-
-@media screen and (min-width: 48rem) {
-  html {
-    font-size: 16px;
-  }
-}
-
-body {
-  line-height: 1.85;
-}
-
-p,
-.modest-p {
-  font-size: 1rem;
-  margin-bottom: 1.3rem;
-}
-
-h1,
-.modest-h1,
-h2,
-.modest-h2,
-h3,
-.modest-h3,
-h4,
-.modest-h4 {
-  margin: 1.414rem 0 .5rem;
-  font-weight: inherit;
-  line-height: 1.42;
-}
-
-h1,
-.modest-h1 {
-  margin-top: 0;
-  font-size: 3rem;
-}
-
-h2,
-.modest-h2 {
-  font-size: 2rem;
-}
-
-h3,
-.modest-h3 {
-  font-size: 1.5rem;
-}
-
-h4,
-.modest-h4 {
-  font-size: 1.25rem;
-}
-
-h5,
-.modest-h5 {
-  font-size: 1rem;
-}
-
-h6,
-.modest-h6 {
-  font-size: .88rem;
-}
-
-small,
-.modest-small {
-  font-size: .707em;
-}
-
-/* https://github.com/mrmrs/fluidity */
-
-img,
-canvas,
-iframe,
-video,
-svg,
-select,
-textarea {
-  max-width: 100%;
-}
-
-@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
-
-@import url(http://fonts.googleapis.com/css?family=Arimo:700,700italic);
-
-html {
-  font-size: 18px;
-  max-width: 100%;
-}
-
-body {
-  color: #444;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: 300;
-  margin: 0 auto;
-  max-width: 48rem;
-  line-height: 1.45;
-  padding: .25rem;
-}
-
-h1,
-h2,
-h3,
 h4,
 h5,
 h6 {
-  font-family: Arimo, Helvetica, sans-serif;
+  font-family: 'Open Sans', Helvetica, sans-serif;
 }
 
 h1,
@@ -267,13 +107,13 @@ h3 {
 }
 
 blockquote {
-  border-left: 8px solid #fafafa;
+  border-left: 8px solid lightgray;
   padding: 1rem;
 }
 
 pre,
 code {
-  background-color: #fafafa;
+  background-color: lightgray;
 }
   *{
     padding: 0;
@@ -296,7 +136,7 @@ code {
   
   .container{
     /* display: flex; */
-    max-width: 80%;
+    /* max-width: 80%; */
   }
   h1{
     width: 100%;
@@ -325,7 +165,16 @@ code {
     padding: 4px;
     
   }
-  .description{
+  .description, p{
     font-size: 0.85em;
+    font-family: 'Open Sans', Helvetica, sans-serif;
   }
+
+  ol, ul{
+    font-size: 0.75em;
+    font-weight: 100;
+    list-style-type: circle;
+  }
+
+  
 </style>
